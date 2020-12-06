@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      .posterImg {
+        width: 50%;
+      }
+    </style>
+  </head>
+
+  <body onload="atomaticS()">
+    <div>
+      <button onclick="posterScrooling(false)">-</button>
+      <img class="posterImg" src="img/FMjpg_1.jpg" />
+      <button onclick="posterScrooling(true)">+</button>
+    </div>
+    <script>
+      var n = 0;
+      // var intrvel = null;
+      var arryaImg = ["img/FMjpg_1.jpg", "img/movie2.webp", "img/movie3.webp"];
+      var imgTag = document.querySelector(".posterImg");
+      var l = arryaImg.length;
+      function posterScrooling(x) {
+        clearInterval(atomaticS);
+        if (x && n <= i - 1) {
+          n++;
+          if (n === l - 1) {
+            n = 0;
+          }
+        } else {
+          if (!x && n > 0) {
+            n--;
+          }
+        }
+        imgTag.src = arryaImg[n];
+      }
+      function atomaticS() {
+        setInterval(function () {
+          if (n <= l) {
+            imgTag.src = arryaImg[n];
+            n++;
+            if (n === l) {
+              n = 0;
+            }
+          }
+        }, 3000);
+      }
+      //   function killTerminal() {
+      //     clearInterval(intrvel);
+      //     //intrvel = null;
+      //   }
+    </script>
+  </body>
+</html>

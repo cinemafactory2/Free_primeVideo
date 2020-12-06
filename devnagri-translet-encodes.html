@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      <input type="text" name="" id="input" />
+      <button onclick="translateToHtmlEncodes()">IUJIJI</button>
+      <p id="devnagri">&#2350;&#2352;&#2366;&#2336;&#2368;</p>
+      <p>&#2310;&#2352;&#2340;&#2368;</p>
+      <p>&#2351;&#2379;&#2327;&#2375;&#2358;</p>
+    </div>
+
+    <!-- <script>
+      var str = document.getElementById("input").value;
+      function translateToHtmlEncodes(str) {
+        return str.split("").reduce(function (encode, word) {
+          var wrap = "&#" + word.charCodeAt(0) + ";";
+          return (encode += wrap);
+          console.log((encode += wrap));
+        }, "");
+      }
+    </script> -->
+    <!--1step- 'हिन्दी' ...chaek in consol log and get charcodeAt no and print with &#num;&#num in html  -->
+    <!--2step "हि".charCodeAt(0)  -->
+    <!--3step "हि".charCodeAt(1) -->
+    <!--4step "न्".charCodeAt(0) -->
+    <!--5step "दी"..charCodeAt(0) -->
+    <!--5step "दी"..charCodeAt(1) -->
+  </body>
+</html>

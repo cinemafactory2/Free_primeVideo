@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+  </head>
+  <body onload="atomaticScroll()">
+    <section class="header">
+      <div class="header-wrapper">
+        <img class="logo-img" src="img/amazon-prime.png" />
+        <ul class="header-list">
+          <li>Home</li>
+          <li>TV Shows</li>
+          <li>Movies</li>
+          <li>Kids</li>
+        </ul>
+        <div class="search-bar">
+          <i class="fas fa-search search-font"></i>
+          <input type="text" name="" placeholder="Search" />
+        </div>
+        <div onclick="profileVisibale()" class="user-acount">
+          <img class="profile-img" src="img/adult-1.png" />
+          <span class="user-name">
+            <span class="user-1Name">Yogesh...</span>
+            <button class="profile-up-down-btn">
+              <i id="profile-down" class="fas fa-sort-down"></i>
+            </button>
+          </span>
+          <div class="profile-toggel">
+            <ul class="list1">
+              <li>profile</li>
+              <li>account setting</li>
+              <li>wachlist</li>
+              <li>help</li>
+            </ul>
+            <span class="vertical-line"></span>
+            <ul class="list1">
+              <li>profile</li>
+              <li><i class="fas fa-plus-circle"></i> add new</li>
+              <li>manage account</li>
+              <li>help</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- this section for scrolling movie posters  -->
+    <section>
+      <div class="movie-postrs">
+        <button class="btn1">
+          <i
+            onclick="posterScrooling(false)"
+            class="fas fa-chevron-left left-scrolling scrollingCss"
+          ></i>
+        </button>
+        <button class="btn">
+          <i
+            onclick="posterScrooling(true)"
+            class="fas fa-chevron-right right-scrolling scrollingCss"
+          ></i>
+        </button>
+        <img class="posterImg" src="img/FMjpg_1.jpg" />
+      </div>
+    </section>
+    <!-- moviles list  -->
+
+    <section class="parent">
+      <div class="vewiport-wrapper">
+        <section class="Watch-next-movies">
+          <h3>Watch next TV and movies</h3>
+          <div class="div-wrapper">
+            <div class="row">
+              <button class="scroll-btn-min comman-scrolling-css">
+                <i
+                  onclick="horizontalscroll(false, '.div-wrapper')"
+                  class="fas fa-chevron-left right-scrolling scrollingCss"
+                ></i>
+              </button>
+              <div class="Watch-next-imgs">
+                <a href="thappade-movie.html">
+                  <img src="img/thappade-frant-poster.webp" />
+                </a>
+                <div class="movie-intro">
+                  <div class="fonts">
+                    <a href="thappade-movie.html"
+                      ><b class="far fa-play-circle"></b>play</a
+                    >
+                    <span>
+                      <i class="fas fa-plus plus-font"></i>
+                      <span class="tootTip text1">add to watchlist </span>
+                    </span>
+                    <span>
+                      <i class="fas fa-play play-font"></i>
+                      <span class="tootTip text2">watch Trailer</span>
+                    </span>
+                  </div>
+                  <p class="Movie-tittel">Thappad</p>
+
+                  <p>
+                    Thappad is a story of Amrita whose seemingly perfect life is
+                    shattered when her husband slaps her once in a party. But is
+                    one slap enough...
+                  </p>
+                  <div class="movie-year">
+                    <span>2hr 20 min 2020 </span>
+                    <i class="far fa-comment-alt"></i>
+                    <span class="veiws">+ 13</span>
+                  </div>
+                </div>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/choricha-malmla-poster.webp" /></a>
+                <div class="movie-intro">
+                  <div class="fonts">
+                    <a><b class="far fa-play-circle"></b>play</a>
+                    <i class="fas fa-plus plus-font"></i>
+                    <span class="tootTip text1">add to watchlist </span>
+
+                    <i class="fas fa-play play-font"></i>
+                    <span class="tootTip text2">watch Trailer</span>
+                  </div>
+                  <p class="Movie-tittel">Choricha Mamla</p>
+                  <p>
+                    Thappad is a story of Amrita whose seemingly perfect life is
+                    shattered when her husband slaps her once in a party. But is
+                    one slap enough...
+                  </p>
+                  <div class="movie-year">
+                    <span>2hr 20 min 2020 </span>
+                    <i class="far fa-comment-alt"></i>
+                    <span class="veiws">+ 13</span>
+                  </div>
+                </div>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/family-man-poster.webp" /></a>
+                <div class="movie-intro">
+                  <div class="fonts">
+                    <a><b class="far fa-play-circle"></b>play</a>
+                    <i class="fas fa-plus plus-font"></i>
+                    <span class="tootTip text1">add to watchlist </span>
+
+                    <i class="fas fa-play play-font"></i>
+                    <span class="tootTip text2">watch Trailer</span>
+                  </div>
+                  <p class="Movie-tittel">The family man (web seris)</p>
+                  <p>
+                    The Family Man is an edgy action-drama series, which tells
+                    the story of a middle-class man who works for a special cell
+                    of the National...
+                  </p>
+
+                  <div class="movie-year">
+                    <span>2hr 20 min 2020 </span>
+                    <i class="far fa-comment-alt"></i>
+                    <span class="veiws">+ 13</span>
+                  </div>
+                </div>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/good-news-poster.webp" /></a>
+                <div class="movie-intro">
+                  <div class="fonts">
+                    <a><b class="far fa-play-circle"></b>play</a>
+                    <i class="fas fa-plus plus-font"></i>
+                    <span class="tootTip text1">add to watchlist </span>
+
+                    <i class="fas fa-play play-font"></i>
+                    <span class="tootTip text2">watch Trailer</span>
+                  </div>
+                  <p class="Movie-tittel">Good News</p>
+                  <p>
+                    The Family Man is an edgy action-drama series, which tells
+                    the story of a middle-class man who works for a special cell
+                    of the National...
+                  </p>
+                  <div class="movie-year">
+                    <span>2hr 20 min 2020 </span>
+                    <i class="far fa-comment-alt"></i>
+                    <span class="veiws">+ 13</span>
+                  </div>
+                </div>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/good-news-poster.webp" /></a>
+                <div class="movie-intro">
+                  <div class="fonts">
+                    <a><b class="far fa-play-circle"></b>play</a>
+                    <i class="fas fa-plus plus-font"></i>
+                    <span class="tootTip text1">add to watchlist </span>
+
+                    <i class="fas fa-play play-font"></i>
+                    <span class="tootTip text2">watch Trailer</span>
+                  </div>
+                  <p class="Movie-tittel">Good News</p>
+                  <p>
+                    The Family Man is an edgy action-drama series, which tells
+                    the story of a middle-class man who works for a special cell
+                    of the National...
+                  </p>
+                  <div class="movie-year">
+                    <span>2hr 20 min 2020 </span>
+                    <i class="far fa-comment-alt"></i>
+                    <span class="veiws">+ 13</span>
+                  </div>
+                </div>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/good-news-poster.webp" /></a>
+                <div class="movie-intro">
+                  <div class="fonts">
+                    <a><b class="far fa-play-circle"></b>play</a>
+                    <i class="fas fa-plus plus-font"></i>
+                    <span class="tootTip text1">add to watchlist </span>
+
+                    <i class="fas fa-play play-font"></i>
+                    <span class="tootTip text2">watch Trailer</span>
+                  </div>
+                  <p class="Movie-tittel">Good News</p>
+                  <p>
+                    The Family Man is an edgy action-drama series, which tells
+                    the story of a middle-class man who works for a special cell
+                    of the National...
+                  </p>
+                  <div class="movie-year">
+                    <span>2hr 20 min 2020 </span>
+                    <i class="far fa-comment-alt"></i>
+                    <span class="veiws">+ 13</span>
+                  </div>
+                </div>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/thappade-frant-poster.webp" /></a>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/choricha-malmla-poster.webp" /></a>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/family-man-poster.webp" /></a>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/good-news-poster.webp" /></a>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/family-man-poster.webp" /></a>
+              </div>
+              <div class="Watch-next-imgs">
+                <a><img src="img/good-news-poster.webp" /></a>
+              </div>
+              <button class="scroll-btn-add comman-scrolling-css">
+                <i
+                  onclick="horizontalscroll(true,'.div-wrapper')"
+                  class="fas fa-chevron-right right-scrolling scrollingCss"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="Watch-next-movies2">
+          <h3>Movies in Hindi</h3>
+          <a class="see-more">see more</a>
+          <div class="div-wrapper2">
+            <button class="scroll-btn-min comman-scrolling-css">
+              <i
+                onclick="horizontalscroll(false,'.div-wrapper2')"
+                class="fas fa-chevron-left right-scrolling scrollingCss"
+              ></i>
+            </button>
+            <div class="Watch-next-imgs">
+              <a><img src="img/mardaani2-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/thappade-frant-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/war-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/murder-case-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/murder-case-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/war-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/thappade-frant-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/choricha-malmla-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/family-man-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/good-news-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/family-man-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/good-news-poster.webp" /></a>
+            </div>
+            <button class="scroll-btn-add comman-scrolling-css">
+              <i
+                onclick="horizontalscroll(true,'.div-wrapper2')"
+                class="fas fa-chevron-right right-scrolling scrollingCss"
+              ></i>
+            </button>
+          </div>
+        </section>
+        <!--  -->
+        <section class="Watch-next-movies">
+          <h3>Movies in Mararhi</h3>
+          <div class="div-wrapper3">
+            <button class="scroll-btn-min comman-scrolling-css">
+              <i
+                onclick="horizontalscroll(false,'.div-wrapper3')"
+                class="fas fa-chevron-left right-scrolling scrollingCss"
+              ></i>
+            </button>
+            <div class="Watch-next-imgs">
+              <a><img src="img/thappade-frant-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/choricha-malmla-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/family-man-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/good-news-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/family-man-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/good-news-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/family-man-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/good-news-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/family-man-poster.webp" /></a>
+            </div>
+            <div class="Watch-next-imgs">
+              <a><img src="img/good-news-poster.webp" /></a>
+            </div>
+            <button class="scroll-btn-add comman-scrolling-css">
+              <i
+                onclick="horizontalscroll(true,'.div-wrapper3')"
+                class="fas fa-chevron-right right-scrolling scrollingCss"
+              ></i>
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- according languages -->
+    <section class="language">
+      <h3>watch in your Language</h3>
+      <div class="your-language">
+        <ul>
+          <li>
+            <img class="language-img" src="img/hindi.jpg" />
+            <div class="img-overlay">
+              <p class="language-name">Hindi</p>
+            </div>
+          </li>
+          <li>
+            <img class="language-img" src="img/marathi.jpg" />
+            <div class="img-overlay">
+              <p class="language-name">Marathi</p>
+            </div>
+          </li>
+          <li>
+            <img class="language-img" src="img/english.jpg" />
+            <div class="img-overlay">
+              <p class="language-name">English</p>
+            </div>
+          </li>
+          <li>
+            <img class="language-img" src="img/tamil.jpg" />
+            <div class="img-overlay">
+              <p class="language-name">Tamil</p>
+            </div>
+          </li>
+          <li>
+            <img class="language-img" src="img/telgu.jpg" />
+            <div class="img-overlay">
+              <p class="language-name">Telgu</p>
+            </div>
+          </li>
+          <li>
+            <img class="language-img" src="img/kanada.jpg" />
+            <div class="img-overlay">
+              <p class="language-name">Kanada</p>
+            </div>
+          </li>
+          <li>
+            <img class="language-img" src="img/gujrati.jpg" />
+            <div class="img-overlay">
+              <p class="language-name">Gujrati</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script>
+      // onclick open account details
+      var isClick = false;
+      function profileVisibale() {
+        var profileDown = document.getElementById("profile-down");
+        var profileMenu = document.querySelector(".profile-toggel");
+        if (isClick == false) {
+          profileDown.style.transform = "rotate(180deg)";
+          profileMenu.style.display = "block";
+          isClick = true;
+        } else {
+          profileDown.style.transform = "rotate(0deg)";
+          profileMenu.style.display = "none";
+          isClick = false;
+        }
+      }
+      // poster scrolling
+      var n = 0;
+      var arryaImg = [
+        "img/FMjpg_1.jpg",
+        "img/movie2.webp",
+        "img/movie3.webp",
+        "img/poster4.webp",
+        "img/SX3000_FMwebp_.webp",
+      ];
+      var interval;
+      var imgTag = document.querySelector(".posterImg");
+      var arryaIndexCount = arryaImg.length;
+      function posterScrooling(x) {
+        clearInterval(interval);
+        if (x && n <= arryaIndexCount) {
+          console.log(n);
+          n++;
+          if (n === arryaIndexCount) {
+            n = 0;
+          }
+        } else if (!x && n > 0) {
+          n--;
+        }
+        imgTag.src = arryaImg[n];
+        atomaticScroll();
+      }
+      function atomaticScroll() {
+        interval = setInterval(function () {
+          if (n <= arryaIndexCount) {
+            imgTag.src = arryaImg[n];
+            n++;
+            if (n === arryaIndexCount) {
+              n = 0;
+            }
+          }
+        }, 3000);
+      }
+
+      // horizontal scrolling in js
+      // var a = 0;
+      function horizontalscroll(elValue, parent) {
+        var parentElm = document.querySelector(parent);
+        var scrollingImg = parentElm.querySelectorAll(".Watch-next-imgs");
+        var scrollBtnMin = parentElm.querySelector(".scroll-btn-min");
+        var scrollBtnAdd = parentElm.querySelector(".scroll-btn-add");
+
+        var a = parentElm.dataset.slidepos;
+        if (a === undefined) {
+          a = 0;
+        } else {
+          a = Number(a);
+        }
+        var x = 400;
+        if (elValue) {
+          a -= 400;
+          scrollBtnMin.style.display = "block";
+          if (a == -(x * 2)) {
+            scrollBtnAdd.style.display = "none";
+          }
+        } else if (!elValue) {
+          a += 400;
+          if (a == 0) {
+            scrollBtnMin.style.display = "none";
+          } else if (a > -(x * 2)) {
+            scrollBtnAdd.style.display = "block";
+          }
+        }
+
+        parentElm.dataset.slidepos = a;
+        // save the value of a
+
+        for (var i = 0; i < scrollingImg.length; i++) {
+          scrollingImg[i].style.transform = "translateX(" + a + "%)";
+        }
+      }
+    </script>
+  </body>
+</html>

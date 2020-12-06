@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      .posterImg {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button onclick="posterScrooling(false)">-</button>
+      <img class="posterImg" src="img/FMjpg_1.jpg" />
+      <button onclick="posterScrooling(true)">+</button>
+    </div>
+    <script>
+      var n = 0;
+      var allImg = ["img/FMjpg_1.jpg", "img/movie2.webp", "img/movie3.webp"];
+
+      function posterScrooling(x) {
+        var imgTag = document.querySelector(".posterImg");
+        var l = allImg.length - 1;
+        if (x == true) {
+          if (n < l) {
+            n++;
+          }
+        } else {
+          if (n > 0) {
+            n--;
+          }
+        }
+        imgTag.src = allImg[n];
+      }
+      // short code
+      // if (x && n < l) {
+      //     n++;
+      // } if else( !X && n > 0) {
+      //         n--;
+      // }
+    </script>
+  </body>
+</html>

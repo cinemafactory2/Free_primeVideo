@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      .imgList {
+        display: inline-flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 1000px;
+      }
+      .imgList::-webkit-scrollbar {
+        display: none;
+      }
+      .posterImg {
+        width: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="posterScrooling(false)">-</button>
+    <div class="imgList">
+      <img class="posterImg" src="img/FMjpg_1.jpg" />
+      <img class="posterImg" src="img/movie2.webp" />
+      <img class="posterImg" src="img/FMjpg_1.jpg" />
+      <img class="posterImg" src="img/movie2.webp" />
+      <img class="posterImg" src="img/FMjpg_1.jpg" />
+      <img class="posterImg" src="img/movie2.webp" />
+    </div>
+    <button onclick="posterScrooling(true)">+</button>
+    <script>
+      // var arryaImg = ["img/FMjpg_1.jpg", "img/movie2.webp", "img/movie3.webp"];
+      var posterImg = document.getElementsByClassName("posterImg");
+      var imgList = document.querySelector(".imgList");
+      function posterScrooling(x) {
+        if (x) {
+          sideScroll(imgList, "right", 25, 1000, 10);
+        } else if (!x) {
+          sideScroll(imgList, "left", 25, 1000, 10);
+        }
+      }
+      function sideScroll(element, direction, speed, distance, step) {
+        scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+          if (direction == "left") {
+            element.scrollLeft -= step;
+          } else {
+            element.scrollLeft += step;
+          }
+          scrollAmount += step;
+          if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+          }
+        }, speed);
+      }
+    </script>
+  </body>
+</html>
